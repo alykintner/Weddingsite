@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Oswald&display=swap');
 
+body {
+    font: 12px oswald;
+}
+
+
 
 .banner {
     position:relative;
@@ -18,12 +23,18 @@
     bottom:20px;
 }
 
+/* font styles */
+
 h1 {
     text-align:center;
     font-family:great vibes;
     font-size:60px;
     color:#fff;
     text-shadow:0px 2px 0px #000;
+}
+
+h2 {
+    font: 50px oswald;
 }
 
 .nav {
@@ -41,4 +52,40 @@ h1 {
     padding:10px;
     flex-wrap:wrap;
     flex-grow:1;
+}
+
+
+/* html form */
+
+form {
+    width:50%;
+    background-color:lightgray;
+    margin-bottom:20px;
+    margin-top:10px;
+    padding:20px;
+    box-shadow:1px 1px 6px #000;
+}
+
+input {
+    width:60%;
+    text-align:center;
+    font: 15px oswald;
+}
+
+label {
+    font-size:20px;
+    line-height:40px;
+}
+
+textarea {
+    text-align:center;
+    font: 15px oswald;
+    width:60%;
+    height:10%;
+}
+
+button {
+    width:40%;
+    font:20px oswald;
+    text-transform:uppercase;
 }
