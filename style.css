@@ -1,45 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Oswald|Playfair+Display&display=swap');
 
 body {
     font: 12px oswald;
 }
 
-
-
-.banner {
-    position:relative;
-    width:auto;
-    height:600px;
-    background-image:url("Images/banner2.jpg");
-    background-position: center;
-    background-repeat:none;
-    background-color:#000;
-    opacity:0.8;
+p {
+    text-align:justify;
+    font: 13px oswald;
 }
 
-.title {
+
+img {
     width:100%;
-    position:absolute;
-    bottom:20px;
+    height:100%;
+}
+
+.container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+.about {
+    width:30%;
+    flex-shrink:1;
+    flex-grow:1;
+    padding:20px;
+    border:1px solid blue;
+}
+
+.about-image {
+    flex-shrink:1;
+}
+
+.stats {
+    width:15%;
+    flex-grow:1;
+    flex-shrink:1;
+    text-align:center;
+    line-height:30px;
+    font:16px;
+    color:gray;
+    border:1px solid #000;
+
+
 }
 
 /* font styles */
 
 h1 {
     text-align:center;
-    font-family:great vibes;
-    font-size:60px;
-    color:#fff;
-    text-shadow:0px 2px 0px #000;
+    font:30px great vibes;
+    line-height:60px;
+}
+
+.title {
+    background-color:grey;
+    width:100%;
+    height:auto;
 }
 
 h2 {
-    font: 50px oswald;
+    font: 50px playfair display;
+    text-align:center;
 }
 
 .nav {
     display:flex;
     border-bottom:6px solid #580105;
+    margin-bottom:10px;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:stretch;
 
 }
 
@@ -50,8 +82,14 @@ h2 {
     text-decoration:none;
     text-align:center;
     padding:10px;
-    flex-wrap:wrap;
     flex-grow:1;
+}
+
+.title-f {
+    font-size:30px;
+    text-align:center;
+    color:#000;
+
 }
 
 
@@ -89,3 +127,57 @@ button {
     font:20px oswald;
     text-transform:uppercase;
 }
+
+
+
+/* media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .banner {
+        position:relative;
+        width:auto;
+        height:600px;
+        background-image:url("Images/banner2.jpg");
+        background-position: center;
+        background-repeat:none;
+        background-color:#000;
+        opacity:0.8;
+    }
+
+    .title {
+        width:100%;
+        position:absolute;
+        bottom:20px;
+        background-color:transparent;
+    }
+
+    h1 {
+        text-align:center;
+        font-family:great vibes;
+        font-size:60px;
+        color:#fff;
+        text-shadow:0px 2px 0px #000;
+    }
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+
+.clearfix {
+    overflow: auto;
+  }
